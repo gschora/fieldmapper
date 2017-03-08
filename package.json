@@ -1,0 +1,7 @@
+{
+  "main": "index.html",
+  "name": "fieldmapper",
+  "window":{
+  	"title": "fieldmapper"
+    }
+}
