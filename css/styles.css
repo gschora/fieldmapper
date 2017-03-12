@@ -48,3 +48,14 @@ body {
     top: 130px;
     left: .5em;
 }
+
+.btn_feature_del{
+    top: 170px;
+    left: .5em;
+}
+#btn_feature_del{
+    background-color: rgba(255, 0, 0,.5);
+}
+#btn_feature_del:hover{
+    background-color: rgba(255, 0, 0,.8);
+}
