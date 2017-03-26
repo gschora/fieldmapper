@@ -3,12 +3,12 @@ var win = nw.Window.get();
  * starts all functions in die file
  */
 (function() {
-    autoReloadPage();
-    win.showDevTools();
-    // console.log("test1");
-    // setupMenu();
-    // setupCfg();
-    // setupKeyBindings();
+  autoReloadPage();
+  win.showDevTools();
+  // console.log("test1");
+  // setupMenu();
+  // setupCfg();
+  // setupKeyBindings();
 })();
 
 /**
@@ -16,104 +16,101 @@ var win = nw.Window.get();
  */
 
 // function setupCfg() {
-    // if (global.cfg === undefined) global.cfg = {}; //short if
-    // if (global.mapLayers === undefined) global.mapLayers = {};
-    // if (global.mapFeatures === undefined) global.mapFeatures = {};
+// if (global.cfg === undefined) global.cfg = {}; //short if
+// if (global.mapLayers === undefined) global.mapLayers = {};
+// if (global.mapFeatures === undefined) global.mapFeatures = {};
 
-    // if (localStorage.imuAccelCalX === undefined) localStorage.imuAccelCalX = 0;
-    // if (localStorage.imuAccelCalY === undefined) localStorage.imuAccelCalY = 0;
-    // if (localStorage.imuAntennaHeight === undefined) localStorage.imuAntennaHeight = 0;
+// if (localStorage.imuAccelCalX === undefined) localStorage.imuAccelCalX = 0;
+// if (localStorage.imuAccelCalY === undefined) localStorage.imuAccelCalY = 0;
+// if (localStorage.imuAntennaHeight === undefined) localStorage.imuAntennaHeight = 0;
 
-    // global.cfg.imuAccelCalX = parseFloat(localStorage.imuAccelCalX);
-    // global.cfg.imuAccelCalY = parseFloat(localStorage.imuAccelCalY);
-    // global.cfg.imuAntennaHeight = parseInt(localStorage.imuAntennaHeight);
-    // global.cfg.sensorConnected = false;
+// global.cfg.imuAccelCalX = parseFloat(localStorage.imuAccelCalX);
+// global.cfg.imuAccelCalY = parseFloat(localStorage.imuAccelCalY);
+// global.cfg.imuAntennaHeight = parseInt(localStorage.imuAntennaHeight);
+// global.cfg.sensorConnected = false;
 
-    // global.win = gui.Window.get();
-    // global.pageReloaded = true; //shows if page is reloaded
+// global.win = gui.Window.get();
+// global.pageReloaded = true; //shows if page is reloaded
 
-    // if (localStorage.mapProxyPath === undefined) localStorage.mapProxyPath = "";
-    // if (localStorage.mapProxyStartArgs === undefined) localStorage.mapProxyStartArgs = "";
-    // if (localStorage.mapProxyHost === undefined) localStorage.mapProxyHost = "192.168.1.104";
-    // if (localStorage.mapProxyPort === undefined) localStorage.mapProxyPort = 8080;
+// if (localStorage.mapProxyPath === undefined) localStorage.mapProxyPath = "";
+// if (localStorage.mapProxyStartArgs === undefined) localStorage.mapProxyStartArgs = "";
+// if (localStorage.mapProxyHost === undefined) localStorage.mapProxyHost = "192.168.1.104";
+// if (localStorage.mapProxyPort === undefined) localStorage.mapProxyPort = 8080;
 
-    // global.cfg.mapProxyHost = localStorage.mapProxyHost;
-    // global.cfg.mapProxyHostPort = parseInt(localStorage.mapProxyPort);
-    // global.cfg.mapProxyPath = localStorage.mapProxyPath;
-    // global.cfg.mapProxyStartArgs = localStorage.mapProxyStartArgs.split(",");
+// global.cfg.mapProxyHost = localStorage.mapProxyHost;
+// global.cfg.mapProxyHostPort = parseInt(localStorage.mapProxyPort);
+// global.cfg.mapProxyPath = localStorage.mapProxyPath;
+// global.cfg.mapProxyStartArgs = localStorage.mapProxyStartArgs.split(",");
 
-    // if (localStorage.rtklibPath === undefined) localStorage.rtklibPath = 'tools\\rtklib\\rtknavi_mkl.exe';
-    // if (localStorage.rtklibPort === undefined) localStorage.rtklibPort = 8000;
-    // if (localStorage.rtklibMonitorPort === undefined) localStorage.rtklibMonitorPort = 52001;
-    // if (localStorage.rtklibStartArgs === undefined) localStorage.rtklibStartArgs = "";
+// if (localStorage.rtklibPath === undefined) localStorage.rtklibPath = 'tools\\rtklib\\rtknavi_mkl.exe';
+// if (localStorage.rtklibPort === undefined) localStorage.rtklibPort = 8000;
+// if (localStorage.rtklibMonitorPort === undefined) localStorage.rtklibMonitorPort = 52001;
+// if (localStorage.rtklibStartArgs === undefined) localStorage.rtklibStartArgs = "";
 
-    // global.cfg.rtklibPath = localStorage.rtklibPath;
-    // global.cfg.rtklibPort = parseInt(localStorage.rtklibPort);
-    // global.cfg.rtklibMonitorPort = parseInt(localStorage.rtklibMonitorPort);
-    // global.cfg.rtklibStartArgs = localStorage.rtklibStartArgs.split(",");
-    // global.cfg.rtklibStatus = 0; //0 = not running, 1 = running but not started, 2 = tcp-server started
+// global.cfg.rtklibPath = localStorage.rtklibPath;
+// global.cfg.rtklibPort = parseInt(localStorage.rtklibPort);
+// global.cfg.rtklibMonitorPort = parseInt(localStorage.rtklibMonitorPort);
+// global.cfg.rtklibStartArgs = localStorage.rtklibStartArgs.split(",");
+// global.cfg.rtklibStatus = 0; //0 = not running, 1 = running but not started, 2 = tcp-server started
 
-    // if (localStorage.sensorDevicePath === undefined) localStorage.sensorDevicePath = "/dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0"; // /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0
-    // global.cfg.sensorDevicePath = localStorage.sensorDevicePath;
-    // if (localStorage.sensorControlerHost === undefined) localStorage.sensorControlerHost = "192.168.1.104"; // /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0
-    // global.cfg.sensorControlerHost = localStorage.sensorControlerHost;
-    // if (localStorage.sensorControlerPort === undefined) localStorage.sensorControlerPort = 8010; // /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0
-    // global.cfg.sensorControlerPort = localStorage.sensorControlerPort;
-    // if (localStorage.imuSensorSpeed === undefined) localStorage.imuSensorSpeed = 500;
-    // global.cfg.imuSensorSpeed = parseInt(localStorage.imuSensorSpeed); 
-    // if (localStorage.ctrlEnableEcho === undefined) localStorage.ctrlEnableEcho = true;
-    // global.cfg.ctrlEnableEcho = JSON.parse(localStorage.ctrlEnableEcho);
+// if (localStorage.sensorDevicePath === undefined) localStorage.sensorDevicePath = "/dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0"; // /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0
+// global.cfg.sensorDevicePath = localStorage.sensorDevicePath;
+// if (localStorage.sensorControlerHost === undefined) localStorage.sensorControlerHost = "192.168.1.104"; // /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0
+// global.cfg.sensorControlerHost = localStorage.sensorControlerHost;
+// if (localStorage.sensorControlerPort === undefined) localStorage.sensorControlerPort = 8010; // /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTFVL144-if00-port0
+// global.cfg.sensorControlerPort = localStorage.sensorControlerPort;
+// if (localStorage.imuSensorSpeed === undefined) localStorage.imuSensorSpeed = 500;
+// global.cfg.imuSensorSpeed = parseInt(localStorage.imuSensorSpeed);
+// if (localStorage.ctrlEnableEcho === undefined) localStorage.ctrlEnableEcho = true;
+// global.cfg.ctrlEnableEcho = JSON.parse(localStorage.ctrlEnableEcho);
 
-    // if (localStorage.hydroSpeed === undefined) localStorage.hydroSpeed = 500;
-    // global.cfg.hydroSpeed = parseInt(localStorage.hydroSpeed);
-    // if (localStorage.hydroDuration === undefined) localStorage.hydroDuration = 200;
-    // global.cfg.hydroDuration = parseInt(localStorage.hydroDuration);
-    // if (localStorage.hydroDevicePath === undefined) localStorage.hydroDevicePath = "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_01286-if00-port0";
-    // global.cfg.hydroDevicePath = localStorage.hydroDevicePath;
-    // if (localStorage.hydroAutoSteer === undefined) localStorage.hydroAutoSteer = false;
-    // global.cfg.hydroAutoSteer = JSON.parse(localStorage.hydroAutoSteer);
+// if (localStorage.hydroSpeed === undefined) localStorage.hydroSpeed = 500;
+// global.cfg.hydroSpeed = parseInt(localStorage.hydroSpeed);
+// if (localStorage.hydroDuration === undefined) localStorage.hydroDuration = 200;
+// global.cfg.hydroDuration = parseInt(localStorage.hydroDuration);
+// if (localStorage.hydroDevicePath === undefined) localStorage.hydroDevicePath = "/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_01286-if00-port0";
+// global.cfg.hydroDevicePath = localStorage.hydroDevicePath;
+// if (localStorage.hydroAutoSteer === undefined) localStorage.hydroAutoSteer = false;
+// global.cfg.hydroAutoSteer = JSON.parse(localStorage.hydroAutoSteer);
 
-    // if (localStorage.gpsLowPass === undefined) localStorage.gpsLowPass = 1;
-    // global.cfg.gpsLowPass = parseInt(localStorage.gpsLowPass);
-    // if (localStorage.gpsHighPass === undefined) localStorage.gpsHighPass = 20;
-    // global.cfg.gpsHighPass = parseInt(localStorage.gpsHighPass);
+// if (localStorage.gpsLowPass === undefined) localStorage.gpsLowPass = 1;
+// global.cfg.gpsLowPass = parseInt(localStorage.gpsLowPass);
+// if (localStorage.gpsHighPass === undefined) localStorage.gpsHighPass = 20;
+// global.cfg.gpsHighPass = parseInt(localStorage.gpsHighPass);
 
-    // if(localStorage.distanceFilterVal === undefined) localStorage.distanceFilterVal = 0.1;
-    // global.cfg.distanceFilterVal = parseFloat(localStorage.distanceFilterVal);
-    // if(localStorage.useFilter === undefined) localStorage.useFilter = false;
-    // global.cfg.useFilter = JSON.parse(localStorage.useFilter);
-    
+// if(localStorage.distanceFilterVal === undefined) localStorage.distanceFilterVal = 0.1;
+// global.cfg.distanceFilterVal = parseFloat(localStorage.distanceFilterVal);
+// if(localStorage.useFilter === undefined) localStorage.useFilter = false;
+// global.cfg.useFilter = JSON.parse(localStorage.useFilter);
 
+// if (localStorage.gpsUseCompass === undefined) localStorage.gpsUseCompass = true;
+// if (localStorage.compassLineLength === undefined) localStorage.compassLineLength = 15;
+// if (localStorage.driveLineMoveSpacing === undefined) localStorage.driveLineMoveSpacing = 10;
+// if (localStorage.driveLineSpacing === undefined) localStorage.driveLineSpacing = 130;
+// global.cfg.gpsUseCompass = JSON.parse(localStorage.gpsUseCompass); //localstorage only stores strings, so we need JSON.parse to make a real bool out of the string
+// global.cfg.compassLineLength = parseInt(localStorage.compassLineLength);
+// global.cfg.driveLineMoveSpacing = parseInt(localStorage.driveLineMoveSpacing);
+// global.cfg.driveLineSpacing = parseInt(localStorage.driveLineSpacing); //in cm
 
+// if (localStorage.mapAutoCenter === undefined) localStorage.mapAutoCenter = true;
+// if (localStorage.mapShowWMSLayer === undefined) localStorage.mapShowWMSLayer = false;
+// global.cfg.mapAutoCenter = JSON.parse(localStorage.mapAutoCenter); //when reload, sets center of map to current point
+// global.cfg.mapShowWMSLayer = JSON.parse(localStorage.mapShowWMSLayer); //if true shows wms layer
 
-    // if (localStorage.gpsUseCompass === undefined) localStorage.gpsUseCompass = true;
-    // if (localStorage.compassLineLength === undefined) localStorage.compassLineLength = 15;
-    // if (localStorage.driveLineMoveSpacing === undefined) localStorage.driveLineMoveSpacing = 10;
-    // if (localStorage.driveLineSpacing === undefined) localStorage.driveLineSpacing = 130;
-    // global.cfg.gpsUseCompass = JSON.parse(localStorage.gpsUseCompass); //localstorage only stores strings, so we need JSON.parse to make a real bool out of the string
-    // global.cfg.compassLineLength = parseInt(localStorage.compassLineLength);
-    // global.cfg.driveLineMoveSpacing = parseInt(localStorage.driveLineMoveSpacing);
-    // global.cfg.driveLineSpacing = parseInt(localStorage.driveLineSpacing); //in cm
+// if (global.mapFeatures.driveLineListLeft === undefined) global.mapFeatures.driveLineListLeft = [];
+// if (global.mapFeatures.driveLineListRight === undefined) global.mapFeatures.driveLineListRight = [];
 
-    // if (localStorage.mapAutoCenter === undefined) localStorage.mapAutoCenter = true;
-    // if (localStorage.mapShowWMSLayer === undefined) localStorage.mapShowWMSLayer = false;
-    // global.cfg.mapAutoCenter = JSON.parse(localStorage.mapAutoCenter); //when reload, sets center of map to current point
-    // global.cfg.mapShowWMSLayer = JSON.parse(localStorage.mapShowWMSLayer); //if true shows wms layer
+// if (global.cfg.driveLineListSide === undefined) global.cfg.driveLineListSide = 0;
+// if (global.cfg.driveLineListIndexCurrent === undefined) global.cfg.driveLineListIndexCurrent = -1;
 
-    // if (global.mapFeatures.driveLineListLeft === undefined) global.mapFeatures.driveLineListLeft = [];
-    // if (global.mapFeatures.driveLineListRight === undefined) global.mapFeatures.driveLineListRight = [];
+// if (localStorage.driveLineArea !== undefined) {
+//     $('#statusHeader_driveLineArea').html(localStorage.driveLineArea);
+// }
 
-    // if (global.cfg.driveLineListSide === undefined) global.cfg.driveLineListSide = 0;
-    // if (global.cfg.driveLineListIndexCurrent === undefined) global.cfg.driveLineListIndexCurrent = -1;
+// global.win.x = -1920;
+// global.win.y = 562;
 
-    // if (localStorage.driveLineArea !== undefined) {
-    //     $('#statusHeader_driveLineArea').html(localStorage.driveLineArea);
-    // }
-
-    // global.win.x = -1920;
-    // global.win.y = 562;
-
-    // global.win.showDevTools();
+// global.win.showDevTools();
 // }
 
 /**
@@ -121,14 +118,12 @@ var win = nw.Window.get();
  */
 
 function autoReloadPage() {
-    var fs = require('fs');
+  var fs = require("fs");
 
-    fs.watch('./', [], function() {
-        if (location)
-            location.reload(false);
-    });
+  fs.watch("./", [], function() {
+    if (location) location.reload(false);
+  });
 }
-
 /**
  * sets up keybindings for control over keyboard
  *
@@ -162,7 +157,6 @@ function autoReloadPage() {
  * 2                    toggle showMap wms
  * 1                    toggle auto center
  */
-
 // function setupKeyBindings() {
 //     global.window.onkeypress = function(key) {
 //         // var keyStr = "";
@@ -171,7 +165,6 @@ function autoReloadPage() {
 //         // keyStr += String.fromCharCode(key.keyCode)+"|";
 //         // keyStr += key.charCode;
 //         // global.console.log(keyStr);
-
 //         if (key.ctrlKey) {
 //             switch (key.charCode) {
 //                 case 18: // ctrl + r
@@ -207,7 +200,6 @@ function autoReloadPage() {
 //                     $('#txtHydroSpeed').spinner('stepDown', 1);
 //                     break;
 //             }
-
 //         } else {
 //             switch (key.charCode) {
 //                 case 97: // a switch active driveline left
@@ -268,19 +260,14 @@ function autoReloadPage() {
 //         }
 //     };
 // }
-
 // function setupMenu() {
 //     // Load native UI library
-
-
 //     // Create an empty menu
 //     var menu = new gui.Menu({
 //         type: 'menubar'
 //     });
-
 //     var cp = require('child_process');
 //     var child;
-
 //     // starts child process from menu click
 //     menu.append(new gui.MenuItem({
 //             label: 'bla',
@@ -297,9 +284,7 @@ function autoReloadPage() {
 //                 }
 //             }
 //         }
-
 //     ));
-
 //     // kills child process from menu klick
 //     menu.append(new gui.MenuItem({
 //             label: 'bla1',
@@ -307,8 +292,6 @@ function autoReloadPage() {
 //                 child.kill();
 //             }
 //         }
-
 //     ));
-
 //     gui.Window.get().menu = menu;
 // }
